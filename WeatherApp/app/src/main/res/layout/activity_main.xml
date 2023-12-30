@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/weatherlogo"
+        android:layout_marginTop="20dp"
+        />
+
+    <TextView
+        android:id="@+id/weatherTV"
+        android:textSize="26sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Weather: " />
+
+    <TextView
+        android:id="@+id/tempTV"
+        android:textSize="26sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Temperature: " />
+
+    <TextView
+        android:id="@+id/feelsTV"
+        android:textSize="26sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Feels Like: " />
+
+    <TextView
+        android:id="@+id/humidityTV"
+        android:textSize="26sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Humidity: " />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <EditText
+            android:id="@+id/editTextCity"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            android:text="City"
+            />
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/search"
+            android:src="@drawable/baseline_search_24"
+            android:layout_height="wrap_content"
+
+            />
+    </LinearLayout>
+
+
+</LinearLayout>
